@@ -15,5 +15,20 @@
     </button>
     <p id="message-render"></p>
   </div>
+  <script>
+    function openWindow(text, yes, cancel)
+      {
+        var info = (confirm("Are you sure you want to continue"));
+        if (info==true)
+          {
+          message="You just clicked 'Yes'";
+          }
+        else
+          {
+          message="You just clicked 'Cancel'";
+          }
+        document.getElementById("message-render").innerHTML=message;
+      }
+  </script>
 </body>
 </html>
